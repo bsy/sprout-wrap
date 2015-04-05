@@ -25,6 +25,7 @@ recipes:
 - sprout-ruby
 - sprout-mysql
 - sprout-postgresql
+- sprout-redis
 
 # apps
 - sprout-osx-apps::iterm2
@@ -39,6 +40,10 @@ recipes:
 
 node_attributes:
   sprout:
+    rbenv:
+        rubies:
+            - 2.1.5
+        default_ruby: 2.1.5
     git:
       domain: pivotallabs.com
       authors:
@@ -83,17 +88,45 @@ node_attributes:
         - wget
         - rbenv-binstubs
         - rbenv-gem-rehash
+        - bash-git-prompt
+        - bash-completion
+        - gpg
+        - freetds
+        - git-flow-avh
+        - memcached
       casks:
+        - 1password
+        - adobe-reader
+        - android-studio
+        - backblaze
         - ccmenu
+        - cheatsheet
+        - dropbox
+        - espionage
+        - filezilla
         - firefox
         - gitx-rowanj
         - github
         - google-chrome
         - google-drive
         - google-hangouts
+        - handbrake
+        - heroku-toolbelt
+        - inkscape
+        - instacast
+        - java
+        - launchy
+        - libreoffice
+        - pgadmin3
+        - skitch
         - skype
+        - slack
+        - sublime-text
         - textmate
         - vagrant
         - virtualbox
         - xquartz
         - xscope
+        - spotify
+        - vlc
+
